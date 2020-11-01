@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodViewCell" customModule="FoodDeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="216" height="347"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="216" height="347"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpk-SS-Fyv">
+                        <rect key="frame" x="0.0" y="0.0" width="216" height="346"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QT7-1f-zmS">
+                                <rect key="frame" x="25" y="8" width="166" height="330"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="4ez-Rm-hRs">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="320"/>
+                                        <subviews>
+                                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="ujs-gS-8bC">
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="150"/>
+                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="JyJ-FQ-S8w"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfn-gE-Qsm">
+                                                <rect key="frame" x="0.0" y="169" width="166" height="151"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="al4-G9-DaF">
+                                                        <rect key="frame" x="10" y="0.0" width="146" height="151"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HSn-oF-ZOp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="146" height="92"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Online Order Near Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="im6-b8-2Fl">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="24"/>
+                                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Website and Online Ordering Terms &amp; Conditions · 日本語; English. Copyright © 2020 Domino's Pizza Japan, Inc. All Rights Reserved." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nj-6b-l6v">
+                                                                        <rect key="frame" x="0.0" y="31" width="146" height="61"/>
+                                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="11"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Dek-q0-YXj">
+                                                                <rect key="frame" x="0.0" y="111" width="146" height="40"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 KG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNy-pg-XTv">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="40"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLl-at-cUL">
+                                                                        <rect key="frame" x="76" y="0.0" width="70" height="40"/>
+                                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="72j-At-CyT"/>
+                                                                            <constraint firstAttribute="width" constant="70" id="j21-Ar-nwQ"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                                        <state key="normal" title="12 USD">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="addCartButtonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="G7e-Gd-cmr"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="al4-G9-DaF" firstAttribute="top" secondItem="Mfn-gE-Qsm" secondAttribute="top" id="Bft-sO-Mxs"/>
+                                                    <constraint firstItem="al4-G9-DaF" firstAttribute="leading" secondItem="Mfn-gE-Qsm" secondAttribute="leading" constant="10" id="mY9-zS-AX9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="al4-G9-DaF" secondAttribute="trailing" constant="10" id="u96-TW-XEy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="al4-G9-DaF" secondAttribute="bottom" id="uFb-lk-tJg"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4ez-Rm-hRs" secondAttribute="trailing" id="GSE-EX-wPa"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ez-Rm-hRs" secondAttribute="bottom" constant="10" id="HPP-B9-yi0"/>
+                                    <constraint firstItem="4ez-Rm-hRs" firstAttribute="top" secondItem="QT7-1f-zmS" secondAttribute="top" id="KzP-ve-kOR"/>
+                                    <constraint firstItem="4ez-Rm-hRs" firstAttribute="leading" secondItem="QT7-1f-zmS" secondAttribute="leading" id="qet-CX-qHh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QT7-1f-zmS" firstAttribute="top" secondItem="rpk-SS-Fyv" secondAttribute="top" constant="8" id="GHE-kb-Jeg"/>
+                            <constraint firstAttribute="bottom" secondItem="QT7-1f-zmS" secondAttribute="bottom" constant="8" id="TVs-gX-bzH"/>
+                            <constraint firstAttribute="trailing" secondItem="QT7-1f-zmS" secondAttribute="trailing" constant="25" id="bpV-vu-wvo"/>
+                            <constraint firstItem="QT7-1f-zmS" firstAttribute="leading" secondItem="rpk-SS-Fyv" secondAttribute="leading" constant="25" id="zAu-uE-jbw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="rpk-SS-Fyv" secondAttribute="leading" id="QQA-OY-tQ0"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="rpk-SS-Fyv" secondAttribute="bottom" constant="1" id="RFm-tl-8wT"/>
+                <constraint firstAttribute="top" secondItem="rpk-SS-Fyv" secondAttribute="top" id="Y6l-RZ-ROi"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="rpk-SS-Fyv" secondAttribute="trailing" id="unc-NH-D6V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="216" height="347"/>
+            <connections>
+                <outlet property="containerView" destination="QT7-1f-zmS" id="DCO-hs-khd"/>
+                <outlet property="descriptionLabel" destination="1Nj-6b-l6v" id="nL9-f9-igU"/>
+                <outlet property="imageView" destination="ujs-gS-8bC" id="rHI-gk-Ojb"/>
+                <outlet property="titleLabel" destination="im6-b8-2Fl" id="Q5r-fK-KQP"/>
+            </connections>
+            <point key="canvasLocation" x="-30.434782608695656" y="-46.540178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pizza" width="2560" height="1825"/>
+    </resources>
+</document>

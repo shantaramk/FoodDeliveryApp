@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryView" id="U6b-Vx-4bR" customClass="CategoryView" customModule="FoodDeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c27-Pf-78E">
+                    <rect key="frame" x="0.0" y="0.0" width="353" height="58"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xY7-RK-mgG">
+                    <rect key="frame" x="0.0" y="55" width="353" height="32"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="q5z-lv-BbS">
+                            <rect key="frame" x="41" y="0.0" width="292" height="32"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-lw-Da3">
+                                    <rect key="frame" x="0.0" y="0.0" width="33" height="32"/>
+                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf8-3D-OsK">
+                                    <rect key="frame" x="54" y="0.0" width="67" height="32"/>
+                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                                    <state key="normal" title="Vegetarian">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9K-hh-DSy">
+                                    <rect key="frame" x="142" y="0.0" width="150" height="32"/>
+                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                                    <state key="normal" title="Spicy">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="q5z-lv-BbS" secondAttribute="bottom" id="39k-5r-96I"/>
+                        <constraint firstAttribute="trailing" secondItem="q5z-lv-BbS" secondAttribute="trailing" constant="20" id="FE9-92-J8F"/>
+                        <constraint firstItem="q5z-lv-BbS" firstAttribute="leading" secondItem="xY7-RK-mgG" secondAttribute="leading" constant="41" id="J4l-rR-bV5"/>
+                        <constraint firstItem="q5z-lv-BbS" firstAttribute="top" secondItem="xY7-RK-mgG" secondAttribute="top" id="slw-4U-mvh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xY7-RK-mgG" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="8W5-R6-79Q"/>
+                <constraint firstItem="c27-Pf-78E" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="FIh-MV-Dju"/>
+                <constraint firstItem="c27-Pf-78E" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="GLe-4D-s7l"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="c27-Pf-78E" secondAttribute="trailing" id="SOc-8l-jqd"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="c27-Pf-78E" secondAttribute="bottom" constant="29" id="TYM-cA-LqV"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="xY7-RK-mgG" secondAttribute="bottom" id="bVs-Lf-Q19"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="xY7-RK-mgG" secondAttribute="trailing" id="cBX-to-Vf8"/>
+                <constraint firstItem="c27-Pf-78E" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="kjC-Ys-2ia"/>
+                <constraint firstItem="xY7-RK-mgG" firstAttribute="top" secondItem="c27-Pf-78E" secondAttribute="bottom" constant="-3" id="qHL-01-L48"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GLe-4D-s7l"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="containerView" destination="c27-Pf-78E" id="kgb-vb-ios"/>
+            </connections>
+            <point key="canvasLocation" x="-112.31884057971016" y="92.075892857142847"/>
+        </collectionReusableView>
+    </objects>
+</document>

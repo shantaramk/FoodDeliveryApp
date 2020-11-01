@@ -1,0 +1,118 @@
+[
+    {
+        "id": "5f9d9697e493c283e8fcd9b7",
+        "Category": "Pizza",
+        "menu": [
+            {
+                "id": 0,
+                "name": "Veg Pizza",
+                "description": "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella ",
+                "amount": 110,
+                "qty": 10,
+                "image": "pizza"
+            },
+            {
+                "id": 1,
+                "name": "Non-Veg Pizza",
+                "description": "Pizza definition, a flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese",
+                "amount": 110,
+                "qty": 10,
+                "image": "pizza"
+            },
+            {
+                "id": 2,
+                "name": "Mix Pizza",
+                "description": "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella ",
+                "amount": 110,
+                "qty": 10,
+                "image": "pizza"
+            },
+            {
+                "id": 3,
+                "name": "Amlet Pizza",
+                "description": "Pizza definition, a flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese",
+                "amount": 110,
+                "qty": 10,
+                "image": "pizza"
+            }
+        ]
+    },
+    {
+        "id": "5f9d9697e493c283e8fcd9b7",
+        "Category": "Drink",
+        "menu": [
+            {
+                "id": 0,
+                "name": "Sugarcane juice.",
+                "description": "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella ",
+                "amount": 110,
+                "qty": 10,
+                "image": "drink"
+            },
+            {
+                "id": 1,
+                "name": "Jal-jeera",
+                "description": "Pizza definition, a flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese",
+                "amount": 110,
+                "qty": 10,
+                "image": "drink"
+            },
+            {
+                "id": 2,
+                "name": "Rooh Afza sharbat.",
+                "description": "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella ",
+                "amount": 110,
+                "qty": 10,
+                "image": "drink"
+            },
+            {
+                "id": 3,
+                "name": "Shikanji.",
+                "description": "Pizza definition, a flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese",
+                "amount": 110,
+                "qty": 10,
+                "image": "drink"
+            }
+        ]
+    },
+    {
+        "id": "5f9d9697e493c283e8fcd9b7",
+        "Category": "Meal",
+        "menu": [
+            {
+                "id": 0,
+                "name": "Amritsari Chicken Masala.",
+                "description": "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella ",
+                "amount": 110,
+                "qty": 10,
+                "image": "meal"
+            },
+            {
+                "id": 1,
+                "name": "Teekha Murg.",
+                "description": "Pizza definition, a flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese",
+                "amount": 110,
+                "qty": 10,
+                "image": "meal"
+
+            },
+            {
+                "id": 2,
+                "name": "Kerala Chicken Roast.",
+                "description": "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella ",
+                "amount": 110,
+                "qty": 10,
+                "image": "meal"
+            },
+            {
+                "id": 3,
+                "name": "Chicken Chettinad.",
+                "description": "Pizza definition, a flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese",
+                "amount": 110,
+                "qty": 10,
+                "image": "meal"
+
+            }
+        ]
+    }
+]

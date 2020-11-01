@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartButtonView" customModule="FoodDeliveryApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cartButton" destination="VLK-7u-ukd" id="Oun-eQ-lxY"/>
+                <outlet property="countLabel" destination="blM-7f-vRU" id="7z7-W7-82H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLK-7u-ukd">
+                    <rect key="frame" x="0.0" y="5" width="75" height="60"/>
+                    <state key="normal" image="shopping-cart"/>
+                    <connections>
+                        <action selector="cartButtonClick:" destination="-1" eventType="touchUpInside" id="MFf-Nw-RjH"/>
+                    </connections>
+                </button>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5x-2P-H7F">
+                    <rect key="frame" x="55" y="5" width="25" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blM-7f-vRU">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ClX-GZ-spa"/>
+                        <constraint firstItem="blM-7f-vRU" firstAttribute="top" secondItem="d5x-2P-H7F" secondAttribute="top" id="FAu-9Z-8Fj"/>
+                        <constraint firstAttribute="width" secondItem="d5x-2P-H7F" secondAttribute="height" multiplier="17:17" id="XBS-VG-NWM"/>
+                        <constraint firstItem="blM-7f-vRU" firstAttribute="leading" secondItem="d5x-2P-H7F" secondAttribute="leading" id="YQR-U3-mjQ"/>
+                        <constraint firstAttribute="width" constant="25" id="YjU-xt-SW0"/>
+                        <constraint firstAttribute="trailing" secondItem="blM-7f-vRU" secondAttribute="trailing" id="dY1-ww-Acd"/>
+                        <constraint firstAttribute="bottom" secondItem="blM-7f-vRU" secondAttribute="bottom" id="lOQ-KG-SPj"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ClX-GZ-spa"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="d5x-2P-H7F" secondAttribute="trailing" constant="5" id="1R1-5k-1Nr"/>
+                <constraint firstItem="VLK-7u-ukd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2ZZ-Rs-zQm"/>
+                <constraint firstItem="VLK-7u-ukd" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Gsg-al-Ofo"/>
+                <constraint firstItem="VLK-7u-ukd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-10" id="JcH-68-hqA"/>
+                <constraint firstItem="d5x-2P-H7F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="qqM-RM-9wT"/>
+                <constraint firstItem="VLK-7u-ukd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="yuq-DP-Hrw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="38.405797101449281" y="119.53125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shopping-cart" width="25" height="25"/>
+    </resources>
+</document>

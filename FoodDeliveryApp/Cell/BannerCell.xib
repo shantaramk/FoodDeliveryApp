@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerCell" customModule="FoodDeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="222"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="222"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="yjI-mk-0hg">
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="222"/>
+                    </imageView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="D5w-6s-ngm">
+                        <rect key="frame" x="145" y="175" width="39" height="37"/>
+                        <color key="pageIndicatorTintColor" red="0.66666666669999997" green="0.062745098040000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="currentPageIndicatorTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pageControl>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="D5w-6s-ngm" secondAttribute="bottom" constant="10" id="3pl-AH-XKE"/>
+                <constraint firstItem="yjI-mk-0hg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UJF-La-DqM"/>
+                <constraint firstItem="yjI-mk-0hg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hDJ-Bt-cMV"/>
+                <constraint firstAttribute="trailing" secondItem="yjI-mk-0hg" secondAttribute="trailing" id="vKW-2l-ffu"/>
+                <constraint firstAttribute="bottom" secondItem="yjI-mk-0hg" secondAttribute="bottom" id="wzG-UH-Ux2"/>
+                <constraint firstItem="D5w-6s-ngm" firstAttribute="centerX" secondItem="yjI-mk-0hg" secondAttribute="centerX" id="yHj-La-VOo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="329" height="222"/>
+            <connections>
+                <outlet property="pageControl" destination="D5w-6s-ngm" id="Ap3-tp-ZED"/>
+            </connections>
+            <point key="canvasLocation" x="89.130434782608702" y="168.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="banner" width="1300" height="502"/>
+    </resources>
+</document>
