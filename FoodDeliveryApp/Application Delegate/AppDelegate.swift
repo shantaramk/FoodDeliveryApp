@@ -11,13 +11,36 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+   // let appPresenter = AppRouter.assembleModules(window: UIWindow(frame: UIScreen.main.bounds))
+    var window: UIWindow!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
-    }
+      //appPresenter.didFinishLaunch()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let homeView = HomeViewRouter.assembleModules()
+ 
 
+        window = UIWindow(frame: UIScreen.main.bounds)
+         window.rootViewController = homeView
+        window.makeKeyAndVisible()
+
+        return true
+
+
+     }
+    func showHomeView() {
+        let homeView = HomeViewRouter.assembleModules()
+        let navigationController = UINavigationController(rootViewController: homeView)
+
+
+         // Create the window. Be sure to use this initializer and not the frame one.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window!.rootViewController = navigationController
+        window!.makeKeyAndVisible()
+
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

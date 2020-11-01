@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="FoodDeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="FoodDeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9W-76-e8Z" customClass="CartButtonView" customModule="FoodDeliveryApp" customModuleProvider="target">
-                                <rect key="frame" x="344" y="712" width="50" height="50"/>
+                                <rect key="frame" x="344" y="752" width="50" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="057-Oq-OI8"/>
@@ -48,7 +48,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o9W-76-e8Z" secondAttribute="trailing" constant="20" id="K22-EZ-Slt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o9W-76-e8Z" secondAttribute="bottom" constant="100" id="OWP-Ih-IhX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o9W-76-e8Z" secondAttribute="bottom" constant="60" id="OWP-Ih-IhX"/>
                             <constraint firstItem="KJj-M2-lo8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TvX-FS-95b"/>
                             <constraint firstItem="KJj-M2-lo8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-44" id="ZN8-Gf-F6W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KJj-M2-lo8" secondAttribute="bottom" id="fhT-5h-f8L"/>
@@ -64,6 +64,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+        <!--Cart Root View Controller-->
+        <scene sceneID="5bn-KZ-scl">
+            <objects>
+                <viewController storyboardIdentifier="CartRootViewController" id="R40-03-0Bv" customClass="CartRootViewController" customModule="FoodDeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTM-YK-mno">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cga-rG-OrF" customClass="HomeBottomControlsStackView" customModule="FoodDeliveryApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UQp-7G-Yu1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cga-rG-OrF" firstAttribute="trailing" secondItem="Qp7-jA-R5H" secondAttribute="trailing" id="20H-v8-MVf"/>
+                            <constraint firstItem="cga-rG-OrF" firstAttribute="top" secondItem="hTM-YK-mno" secondAttribute="top" id="5Ad-Ee-okV"/>
+                            <constraint firstItem="cga-rG-OrF" firstAttribute="leading" secondItem="Qp7-jA-R5H" secondAttribute="leading" id="LHv-w4-ogr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qp7-jA-R5H"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomControls" destination="cga-rG-OrF" id="LTg-8W-AWs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WpD-fi-klb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811.59420289855075" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>

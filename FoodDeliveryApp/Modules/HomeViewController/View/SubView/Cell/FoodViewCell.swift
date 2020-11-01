@@ -16,6 +16,7 @@ class FoodViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var cartButton: UIButton!
 
     var menu: Menu?
 
@@ -27,6 +28,30 @@ class FoodViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        configureUI()
+    }
+
+    func setData(_ menu: Menu?) {
+        self.menu = menu
+        if let menu = menu {
+            self.titleLabel.text = menu.name
+            self.descriptionLabel.text = menu.description
+            self.imageView.image = UIImage(named: menu.image!)
+        }
+    }
+
+}
+
+//MAKR:- Configure UI
+
+extension FoodViewCell {
+
+    func configureUI() {
+        configureView()
+        configureButton()
+    }
+
+    func configureView() {
         containerView.layer.borderColor = UIColor.gray.cgColor
         containerView.layer.borderWidth = 0.3
         containerView.layer.cornerRadius = 12.0
@@ -41,15 +66,11 @@ class FoodViewCell: UICollectionViewCell {
         imageView.layer.maskedCorners =  [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 
-    func setData(_ menu: Menu?) {
-        self.menu = menu
-        if let menu = menu {
-            self.titleLabel.text = menu.name
-            self.descriptionLabel.text = menu.description
-            self.imageView.image = UIImage(named: menu.image!)
-        }
+    func configureButton() {
+        cartButton.layer.borderColor = UIColor.gray.cgColor
+        cartButton.layer.borderWidth = 0.3
+        cartButton.layer.cornerRadius = 12.0
     }
-
 }
 
 //MAKR:- Action

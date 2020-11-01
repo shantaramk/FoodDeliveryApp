@@ -39,16 +39,16 @@
                                                         <rect key="frame" x="10" y="0.0" width="146" height="151"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HSn-oF-ZOp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="146" height="92"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="146" height="97"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Online Order Near Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="im6-b8-2Fl">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="24"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="29"/>
                                                                         <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Website and Online Ordering Terms &amp; Conditions · 日本語; English. Copyright © 2020 Domino's Pizza Japan, Inc. All Rights Reserved." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nj-6b-l6v">
-                                                                        <rect key="frame" x="0.0" y="31" width="146" height="61"/>
+                                                                        <rect key="frame" x="0.0" y="36" width="146" height="61"/>
                                                                         <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="11"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -56,20 +56,20 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Dek-q0-YXj">
-                                                                <rect key="frame" x="0.0" y="111" width="146" height="40"/>
+                                                                <rect key="frame" x="0.0" y="116" width="146" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 KG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNy-pg-XTv">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="35"/>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLl-at-cUL">
-                                                                        <rect key="frame" x="76" y="0.0" width="70" height="40"/>
-                                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <rect key="frame" x="66" y="0.0" width="80" height="35"/>
+                                                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="40" id="72j-At-CyT"/>
-                                                                            <constraint firstAttribute="width" constant="70" id="j21-Ar-nwQ"/>
+                                                                            <constraint firstAttribute="height" constant="35" id="72j-At-CyT"/>
+                                                                            <constraint firstAttribute="width" constant="80" id="j21-Ar-nwQ"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                                         <state key="normal" title="12 USD">
@@ -123,6 +123,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="216" height="347"/>
             <connections>
+                <outlet property="cartButton" destination="eLl-at-cUL" id="V0X-oK-In4"/>
                 <outlet property="containerView" destination="QT7-1f-zmS" id="DCO-hs-khd"/>
                 <outlet property="descriptionLabel" destination="1Nj-6b-l6v" id="nL9-f9-igU"/>
                 <outlet property="imageView" destination="ujs-gS-8bC" id="rHI-gk-Ojb"/>
